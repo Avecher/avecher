@@ -1,0 +1,55 @@
+/* GitHub-like light theme */
+:root{
+  --bg:#f6f8fa;
+  --text:#24292e;
+  --heading:#000;
+  --link:#0969da;
+  --accent:#0969da;
+  --cta:#ff5a36;
+  --card:#ffffff;
+  --border:#d0d7de;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter, Segoe UI, Roboto, Arial, sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+.container{max-width:1040px;margin:0 auto;padding:0 16px}
+.section{padding:64px 0}
+.section.alt{background:#fff}
+h1,h2,h3{color:var(--heading);margin:0 0 16px}
+h1{font-size:40px;line-height:1.15}
+h2{font-size:28px}
+h3{font-size:22px}
+p.lead{font-size:18px;color:#3b424a}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;color:var(--heading)}
+.nav a{margin-left:16px}
+.hero{padding:80px 0}
+.cta-row{margin:20px 0 8px}
+.btn{display:inline-block;padding:10px 16px;border-radius:6px;border:1px solid var(--border);text-decoration:none;transition:.15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.outline{background:#fff;color:var(--text)}
+.btn.large{padding:14px 20px;font-size:18px}
+.usp{display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:16px 0 0;list-style:none}
+.usp li{background:#fff;border:1px solid var(--border);border-radius:20px;padding:6px 12px;font-size:14px}
+.cols-2{display:grid;grid-template-columns:1.3fr .7fr;gap:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px}
+.card.note h3{margin-top:0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.bullets{padding-left:18px;margin:0}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}
+.step{background:#fff;border:1px solid var(--border);border-radius:8px;padding:12px}
+.step .num{display:inline-block;width:24px;height:24px;border-radius:50%;border:1px solid var(--border);text-align:center;line-height:22px;margin-right:8px;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
+.card.highlight{border-color:var(--cta);box-shadow:0 0 0 3px rgba(255,90,54,.1)}
+.note.upsell{margin-top:12px;font-size:14px;color:#4a5158}
+.center{text-align:center}
+.site-footer{border-top:1px solid var(--border);background:#fff}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+@media (max-width:900px){
+  .cols-2{grid-template-columns:1fr}
+  .grid-2,.steps,.cards{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+}
