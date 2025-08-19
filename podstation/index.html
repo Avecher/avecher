@@ -1,1 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПодСтанция — ламповая подкаст-студия</title>
+  <meta name="description" content="Ламповая подкаст-студия в центре Москвы. Режиссура, запись, монтаж и сопровождение. Не аренда — сообщество.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">ПодСтанция</a>
+    <nav class="nav">
+      <a href="#about">О нас</a>
+      <a href="#formats">Форматы</a>
+      <a href="#packages">Пакеты</a>
+      <a href="#why">Почему мы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+</header>
 
+<main>
+  <!-- Hero -->
+  <section id="hero" class="section hero">
+    <div class="container">
+      <h1>🎙️ ПодСтанция — ламповая подкаст-студия для своих</h1>
+      <p class="lead">📡 Где звук — тёплый, атмосфера — настоящая, а смыслы рождаются, а не пишутся.<br>Мы не просто пишем подкасты. Мы режиссируем мысли.<br>Сами записываемся здесь — и приглашаем тебя, если ты «свой».</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Записаться</a>
+        <a class="btn outline" href="#packages">Посмотреть абонементы</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Кто мы такие</h2>
+      <p><strong>ПодСтанция</strong> — часть системы «Режиссёрская Станция». Это уютное пространство для тех, кто хочет, чтобы его понимали, а не просто слушали. Мы не сдаём студию в аренду — мы приглашаем в сообщество.</p>
+    </div>
+  </section>
+
+  <!-- Formats -->
+  <section id="formats" class="section alt">
+    <div class="container">
+      <h2>Что мы предлагаем</h2>
+      <ul class="bullets">
+        <li><strong>Аудио- или видеоподкаст</strong><br>Запись в уютной студии — звук, свет, камеры, поддержка.</li>
+        <li><strong>Режиссёрское сопровождение</strong><br>Нащупаем идею, подскажем ритм, выстроим паузы.</li>
+        <li><strong>Монтаж и постпродакшн</strong><br>Минимализм или атмосфера — всё в твоём стиле.</li>
+        <li><strong>Продвижение</strong><br>Тизеры, рилсы, советы по дистрибуции — если нужно, сделаем.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="section">
+    <div class="container">
+      <h2>Абонементы</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Подкаст — от 25 000 ₽ / выпуск</h3>
+          <ul>
+            <li>Драматургия</li>
+            <li>Режиссура</li>
+            <li>Запись (до 4 часов)</li>
+            <li>Монтаж и мастеринг</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Видеоподкаст — от 45 000 ₽ / выпуск</h3>
+          <ul>
+            <li>Драматургия</li>
+            <li>Режиссура</li>
+            <li>Запись (до 4 часов)</li>
+            <li>Видеомонтаж</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section id="why" class="section alt">
+    <div class="container">
+      <h2>Почему к нам</h2>
+      <p>🟡 Мы делаем не просто звук — мы даём <strong>тон</strong>.</p>
+      <p>Ты не один на записи. Рядом — человек, который чувствует паузы.<br>Ты не просто говоришь — ты разговариваешь с миром.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container center">
+      <h2>Хочешь звучать по-своему?</h2>
+      <p class="lead">Напиши. Своих мы слышим сразу.</p>
+      <p>📧 <a href="mailto:hello@podstation.ru">hello@podstation.ru</a><br>
+         📍 Москва, исторический центр</p>
+      <a class="btn primary large" href="mailto:hello@podstation.ru">Забронировать сессию</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 ПодСтанция</span>
+    <a href="https://t.me/avecher" target="_blank" rel="noopener">Telegram</a>
+  </div>
+</footer>
+
+<script>
+// Smooth anchor scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      e.preventDefault();
+      document.querySelector(id).scrollIntoView({ behavior: 'smooth'});
+    }
+  });
+});
+</script>
+</body>
+</html>
