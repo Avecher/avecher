@@ -2,235 +2,140 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <title>Андрей Вечер — режиссёр</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Режиссура для бизнеса — Андрей Вечер</title>
-  <meta name="description" content="Режиссура для бизнеса: стратегический сторителлинг, структура презентаций и коммуникаций. Пакеты: Легенда, Миф, Эпос.">
-  <meta property="og:title" content="Режиссура для бизнеса — Андрей Вечер">
-  <meta property="og:description" content="Режиссёрский взгляд на бизнес-коммуникацию. От истории бренда до медиастратегии.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://avecher.ru/">
-    <!-- Open Graph для предпросмотра -->
-  <meta property="og:image" content="https://avecher.ru/og-image-square.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="1200">
- <!-- <meta property="og:image" content="https://avecher.ru/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">-->
-  <!-- Дополнительно для X/Twitter -->
-<!--<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://avecher.ru/og-image.png">-->
-  
-  <link rel="icon" href="/favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Я режиссёр. Помогаю людям обрести свой голос, оформить личную историю и создать персональное медиа. Работаю почасово.">
+  <!-- GitHub-like светлая палитра -->
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#24292f;
+      --muted:#57606a;
+      --border:#d0d7de;
+      --link:#0969da;
+      --btn-bg:#2da44e;
+      --btn-fg:#ffffff;
+      --btn-bg-hover:#2c974b;
+      --maxw: 880px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{padding:8px 0 20px;border-bottom:1px solid var(--border)}
+    .brand{display:flex;justify-content:space-between;align-items:center}
+    .brand h1{margin:0;font-size:18px;font-weight:600;letter-spacing:.2px}
+    nav a{margin-left:16px;color:var(--muted)}
+    nav a:hover{color:var(--fg);text-decoration:none}
+    .hero{padding:40px 0 8px}
+    .h1{font-size:36px;line-height:1.2;margin:0 0 8px}
+    .lead{color:var(--muted);font-size:18px;margin:0 0 20px;max-width:720px}
+    .cta{display:inline-block;background:var(--btn-bg);color:var(--btn-fg);
+         font-weight:600;padding:10px 16px;border-radius:6px;border:1px solid rgba(27,31,36,.15)}
+    .cta:hover{background:var(--btn-bg-hover)}
+    section{padding:28px 0;border-top:1px solid var(--border)}
+    h2{font-size:22px;margin:0 0 10px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{border:1px solid var(--border);border-radius:6px;padding:14px}
+    .muted{color:var(--muted)}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0}
+    footer{padding:20px 0;color:var(--muted);border-top:1px solid var(--border);font-size:14px}
+    @media (max-width:760px){.grid{grid-template-columns:1fr}.h1{font-size:28px}}
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="#hero" class="logo">Режиссура для бизнеса</a>
-    <nav class="nav">
-      <a href="#about">Обо мне</a>
-      <a href="#problem">Проблема</a>
-      <a href="#solution">Решение</a>
-      <a href="#packages">Пакеты</a>
-      <a href="#contact">Контакты</a>
-    </nav>
+  <div class="wrap">
+    <header aria-label="Навигация">
+      <div class="brand">
+        <h1>avecher.ru</h1>
+        <nav>
+          <a href="#work">Что я делаю</a>
+          <a href="#format">Формат</a>
+          <a href="#contact">Связь</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-label="Верх страницы">
+        <h2 class="h1">Я режиссёр. Помогаю людям обрести свой голос, оформить личную историю и создать персональное медиа.</h2>
+        <p class="lead">Почасовой формат. Без курсов и пакетов. Первый разговор — свободный.</p>
+        <p><a class="cta" href="#contact">Связаться</a></p>
+      </section>
+
+      <section id="work" aria-label="Что я делаю">
+        <h2>Что я делаю</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Голос</strong>
+            <ul>
+              <li>Собственный тон и лексика.</li>
+              <li>Темы и рамка высказывания.</li>
+              <li>Сценарии выступления/записи.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <strong>История</strong>
+            <ul>
+              <li>От фактов к связному нарративу.</li>
+              <li>Сюжеты, аргументы, структура.</li>
+              <li>Интонация и точка зрения.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <strong>Персональное медиа</strong>
+            <ul>
+              <li>Подкаст / канал / фильмкаст.</li>
+              <li>Редакционный принцип и ритм.</li>
+              <li>План ближайших выпусков.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <strong>На выходе</strong>
+            <ul>
+              <li>Ясный голос и позиция.</li>
+              <li>Оформленная личная история.</li>
+              <li>Заготовка или выпуск собственного медиа.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="format" aria-label="Формат работы">
+        <h2>Формат</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Встречи 1:1</strong>
+            <p class="muted">Очные или онлайн. Работаем по текущей задаче: голос, история, выпуск.</p>
+          </div>
+          <div class="card">
+            <strong>Почасовая оплата</strong>
+            <p class="muted">Просто и прозрачно. <em>Ставка — по запросу.</em></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" aria-label="Контакты">
+        <h2>Связь</h2>
+        <div class="card">
+          <p>Напишите удобным способом. Первый разговор — без формальностей.</p>
+          <p>
+            <a class="cta" href="https://t.me/USERNAME" rel="noopener">Telegram</a>
+            &nbsp;&nbsp; или &nbsp;&nbsp;
+            <a href="mailto:you@example.com">you@example.com</a>
+          </p>
+          <p class="muted">По запросу пришлю примеры работ и краткий план запуска вашего медиа.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© Андрей Вечер. Режиссёр.</div>
+      <div class="muted">Сайт-визитка. Без cookies и трекеров.</div>
+    </footer>
   </div>
-</header>
-
-<main>
-  <!-- Hero -->
-  <section id="hero" class="section hero">
-    <div class="container">
-      <h1>Режиссура для бизнеса</h1>
-      <p class="lead">Стратегический сторителлинг, режиссура презентаций и коммуникаций. <br>Из фактов и идей — цельная история, которой верят и которая двигает к действию.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="https://t.me/avecher" target="_blank" rel="noopener">Связаться в Telegram</a>
-      </div>
-      <ul class="usp">
-        <li>Быстрый вход в контекст</li>
-        <li>Режиссёрский взгляд на коммуникацию</li>
-        <li>Стыковка истории, психологии и визуального языка</li>
-        <li>Фокус на результате</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container cols-2">
-      <div>
-        <h2>Обо мне</h2>
-        <p>Режиссёр с большим опытом работы в кино, театре и медиапроектах. Адаптирую профессиональные инструменты драматургии и режиссуры под задачи бизнеса.</p>
-        <ul class="bullets">
-          <li>30+ лет в режиссуре и продакшене</li>
-          <li>Практика в кино, театре и брендинге</li>
-          <li>Методы: драматургия, нейропсихология восприятия, визуальный язык</li>
-          <li>Работаю быстро: структура и формулы уже после первой сессии</li>
-          <li>Без «агентского» шума — только суть и действие</li>
-        </ul>
-      </div>
-      <div class="card note">
-        <h3>Формат работы</h3>
-        <ul>
-          <li>Онлайн/офлайн сессии по 90 минут</li>
-          <li>Сжатые сроки — быстрый вход в контекст</li>
-          <li>На выходе: структура, ключевые формулы, рекомендации</li>
-        </ul>
-        <a class="btn outline" href="https://t.me/avecher" target="_blank" rel="noopener">Связаться в Telegram</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Problem -->
-  <section id="problem" class="section alt">
-    <div class="container">
-      <h2>Почему бизнесу нужен режиссёр</h2>
-      <div class="grid-2">
-        <ul class="bullets">
-          <li>Разрозненные факты и презентации не складываются в цельный нарратив.</li>
-          <li>Команда говорит на разных языках — теряется смысл и скорость.</li>
-          <li>Контент не вызывает доверия: неясна миссия, ценность, позиция.</li>
-          <li>Слабая визуальная подача — правильные идеи «не летят».</li>
-          <li>Нет системы: каждый раз всё заново.</li>
-        </ul>
-        <ul class="bullets">
-          <li>Нужна история, которая объясняет, объединяет и ведёт к действию.</li>
-          <li>Нужна структура для презентаций, питчей и медиа.</li>
-          <li>Нужны формулы и стандарты, чтобы команда делала это сама.</li>
-          <li>Нужен внешний режиссёр: взгляд, монтаж, ритм.</li>
-          <li>Нужен результат после каждой сессии.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solution -->
-  <section id="solution" class="section">
-    <div class="container">
-      <h2>Как это работает</h2>
-      <div class="steps">
-        <div class="step"><span class="num">1</span><p>Диагностика: закрепляем цель, аудитории и каналы.</p></div>
-        <div class="step"><span class="num">2</span><p>Нарратив: формулируем миссию, ценности, ключевое послание.</p></div>
-        <div class="step"><span class="num">3</span><p>Структура: собираем каркас презентаций и выступлений.</p></div>
-        <div class="step"><span class="num">4</span><p>Подача: рекомендации по визуальному языку и динамике.</p></div>
-        <div class="step"><span class="num">5</span><p>Стандарты: чек‑листы и формулы для команды.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Packages -->
-  <section id="packages" class="section alt">
-    <div class="container">
-      <h2>Пакеты услуг</h2>
-      <div class="cards">
-        <article class="card highlight">
-          <h3>Легенда — от 80 000 ₽</h3>
-          <ul>
-            <li>Аналитика личности и бизнеса</li>
-            <li>Миссия, ценности, ключевое послание</li>
-            <li>Стратегический манифест и архетип</li>
-            <li>Структура для презентаций и выступлений</li>
-            <li>До 3 встреч по 90 минут + подготовка между встречами</li>
-          </ul>
-              <p><strong>Объём работы:</strong> 17–20 часов</p>
-              <p><strong>Почасовая ставка:</strong> 6 000 ₽/час</p>
-              <p><em>Финальная стоимость рассчитывается по времени и сложности задачи.</em></p>
-
-          <a class="btn primary" href="https://t.me/avecher" target="_blank" rel="noopener">Выбрать «Легенду»</a>
-        </article>
-        <article class="card">
-          <h3>Миф — от 150 000 ₽</h3>
-          <ul>
-            <li>Всё из «Легенды»</li>
-            <li>Расширенный нарратив для разных каналов</li>
-            <li>Контент под 3–5 форматов (видео, текст, презентация, подкаст и т. д.)</li>
-            <li>Консультация по визуальной подаче</li>
-            <li>До 5 встреч по 90 минут</li>
-          </ul>
-           <p><strong>Обычно работа занимает:</strong> 30–35 часов</p>
-          <p><strong>Почасовая ставка:</strong> 6 000 ₽</p>
-            <p><em>Финальная стоимость рассчитывается по времени и глубине проработки.</em></p>
-          <a class="btn outline" href="https://t.me/avecher" target="_blank" rel="noopener">Выбрать «Миф»</a>
-        </article>
-        <article class="card">
-          <h3>Эпос — от 300 000 ₽</h3>
-          <ul>
-            <li>Всё из «Мифа»</li>
-            <li>Комплексная медиастратегия</li>
-            <li>Сопровождение запуска кампании</li>
-            <li>Наставничество в течение месяца</li>
-            <li>Неограниченные сессии в рамках проекта</li>
-          </ul>
-            <p><strong>Обычно работа занимает:</strong> 60+ часов</p>
-            <p><strong>Почасовая ставка:</strong> 6 000 ₽</p>
-            <p><em>Финальная стоимость зависит от длительности и объёма кампании.</em></p>
-          <a class="btn outline" href="https://t.me/avecher" target="_blank" rel="noopener">Выбрать «Эпос»</a>
-        </article>
-      </div>
-
-      <div class="note upsell">
-        <strong>Дополнительно:</strong> по запросу — серия подкастов, мини‑фильм, лендинг под кампанию.
-      </div>
-    </div>
-  </section>
-<section id="limit" class="section alt">
-  <div class="container">
-    <h2>Почему только 3 клиента?</h2>
-    <p>
-       <li>Я работаю не с компаниями «на потоке», а с людьми - персонально.</li>
-       <li>Нарратив — это не про текст, а про смену репутационной стратегии.</li>
-      <li>Такой процесс требует фокуса и глубины, поэтому одновременно 
-      я веду не более трёх клиентов.</li>
-      <li>Это гарантирует персональную работу, честность и результат.</li>
-      <li>Легенда рождается только там, где важна каждая деталь.</li>
-    </p>
-  </div>
-</section>
-  <!-- Как мы работаем -->
- <section id="process" class="section">
-  <div class="container">
-    <h2>Как я работаю</h2>
-    <p>
-     <li>Легенда рождается не на финальной встрече, а в процессе.</li> 
-     <li>Я постоянно на связи: задаю вопросы, подбрасываю идеи, обсуждаю ваши ценности.</li> 
-      <li>Вы пишете эссе, формулируете ответы, исследуете себя.</li>
-     <li>Это не формальная услуга, а совместное исследование.</li> 
-     <li>Я действительно интересуюсь вами — как человеком и как профессионалом.</li> 
-     <li>Именно эта искренность превращает Легенду, Миф, Эпос в живую стратегию, 
-      а не в набор красивых слов.</li>
-    </p>
-  </div>
-</section>
-  <!-- Contact / CTA -->
-  <section id="contact" class="section">
-    <div class="container center">
-      <h2>Готовы перейти к делу?</h2>
-      <p class="lead">Напишите в Telegram. Коротко обозначьте задачу — договоримся о первой сессии.</p>
-      <a class="btn primary large" href="https://t.me/avecher" target="_blank" rel="noopener">Связаться в Telegram</a>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <span>© 2025 Андрей Вечер</span>
-    <a href="https://t.me/avecher" target="_blank" rel="noopener">Telegram</a>
-  </div>
-</footer>
-
-<script>
-// Smooth anchor scroll
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', (e) => {
-    const id = a.getAttribute('href');
-    if (id.length > 1) {
-      e.preventDefault();
-      document.querySelector(id).scrollIntoView({ behavior: 'smooth'});
-    }
-  });
-});
-</script>
 </body>
 </html>
